@@ -89,3 +89,67 @@
     color: white;
     font-weight: 500;
 }
+
+/* Architects png section */
+
+.section-2{
+    display: flex;
+    padding-top: 100px;
+}
+.section-2-1st-div{
+    padding-left: 150px;
+}
+.section-2-1st-div span{
+    position: absolute;
+width: 5px;
+height: 60px;
+left: 160px;
+top: 1765px;
+background-color: #FF900E;
+}
+.section-2-1st-div h1{
+    padding-left: 20px;
+}
+.section-2-1st-div div{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    height: 150px;
+}
+.section-2-1st-div div h3{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.section-2-1st-div div p{
+    padding-left: 30px;
+    padding-right: 10px;
+}
+.architects-img img{
+    padding-left: 50px;
+    padding-right: 150px;
+    height: 700px;
+    width: 500px;
+}
+.architects-img button{
+    position: absolute;
+    left: 620px;
+    top: 2370px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #FF900E;
+    color: white;
+    font-weight: 500;
+    z-index: 1;
+}
+.architects-img button span{
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+/* Body section-3 */
+
+.body-section-3{
+    margin-left: 150px;
+    margin-top: 100px;
+}
