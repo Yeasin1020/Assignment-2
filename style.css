@@ -21,8 +21,46 @@
     padding-top: 35px;
     padding-right: 30px;
 }
+.header div div a:hover{
+    border-radius: 5px;
+    border: 0;
+    color: #544545;
+    font-weight: 500;
+    text-decoration: underline;
+}
 
-/* section-1 */
+/* Responsive Header*/
+
+@media screen and (max-width: 700px) {
+    .header{
+        background-color: #FF900E1A;
+    }
+    .header div h2{
+        font-weight: 800;
+        text-align: center;
+    }
+    .header div div{
+       margin-left: -160px;
+    }
+    .home{
+        margin-top: 40px;
+    }
+    .about{
+        margin-left: -75px;
+        margin-top: 60px;
+    }
+    .contact{
+        margin-left: -90px;
+        margin-top: 80px;
+    }
+    .login{
+        margin-left: -90px;
+        margin-top: 100px;
+    }
+    
+}
+
+/* section */
 
 .header-section{
     padding-left: 150px;
@@ -45,9 +83,47 @@
     color: white;
     font-weight: 500;
 }
+.header-section button:hover{
+    color: #FF900E;
+    background-color: white;
+    box-shadow: 3px 3px 3px;
+}
 .header img{
     width: 980px;
     padding: 30px 150px;
+}
+/* Section Responsive */
+@media screen and (max-width: 700px){
+    .header-section{
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    .header-section h1{
+       
+       padding-top: 50px;
+    }
+    .header-section p{
+        font-weight: 400;
+    }
+    .header-section button{
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: 0;
+        background-color: #FF900E;
+        color: white;
+        font-weight: 500;
+    }
+    .header-section button:hover{
+        color: #FF900E;
+        background-color: white;
+        box-shadow: 3px 3px 3px;
+    }
+    .header img{
+        
+        width: 400px;
+        padding: 30px 0; 
+    }
 }
 
 /* Body section-1 */
@@ -89,6 +165,61 @@
     color: white;
     font-weight: 500;
 }
+.body-section-1 div button:hover{
+    color: #FF900E;
+    background-color: white;
+    box-shadow: 3px 3px 3px;
+}
+
+/* Body section-1 Responsive*/
+
+@media screen and (max-width: 700px){
+    .body-section-1{
+        display: flex;
+    }
+    .body-section-1 div{
+        width: 45%;
+    }
+    .body-section-1-img{
+        margin-left: 10px;
+        padding-top: 70px;
+        display: inline-grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+    .body-section-1-img img{
+        width: 200px;
+    }
+    .body-section-1 div h2{
+        padding-top: 200px;
+        padding-left: 70px;
+    }
+    .quick-list{
+        color: rgba(0, 0, 0, 0.324);
+    }
+    .features{
+        color: #FF900E;
+    }
+    .body-section-1 div p{
+        padding-left: 70px;
+        padding-right: 10px;
+    }
+    .body-section-1 div button{
+        margin-left: 70px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: 0;
+        background-color: #FF900E;
+        color: white;
+        font-weight: 500;
+    }
+    .body-section-1 div button:hover{
+        color: #FF900E;
+        background-color: white;
+        box-shadow: 3px 3px 3px;
+    }
+}
 
 /* Architects png section */
 
@@ -101,11 +232,11 @@
 }
 .section-2-1st-div span{
     position: absolute;
-width: 5px;
-height: 60px;
-left: 160px;
-top: 1765px;
-background-color: #FF900E;
+    width: 5px;
+    height: 60px;
+    left: 160px;
+    top: 1765px;
+    background-color: #FF900E;
 }
 .section-2-1st-div h1{
     padding-left: 20px;
@@ -115,6 +246,10 @@ background-color: #FF900E;
     border-radius: 8px;
     background-color: #FFFFFF;
     height: 150px;
+}
+.section-2-1st-div div:hover{
+    box-shadow: 5px 5px 5px;
+    background-color: bisque;
 }
 .section-2-1st-div div h3{
     padding-left: 30px;
@@ -142,9 +277,89 @@ background-color: #FF900E;
     font-weight: 500;
     z-index: 1;
 }
+.architects-img button:hover{
+    color: #FF900E;
+    background-color: white;
+    box-shadow: 3px 3px 5px;
+}
 .architects-img button span{
     font-weight: 1000;
     font-size: 30px;
+}
+
+/* Architects png section Responsive */
+
+@media screen and (max-width: 700px){
+    .section-2{
+        padding-top: 100px;
+    }
+    .section-2-1st-div{
+        padding-left: 10px;
+        padding-bottom: 700px;
+    }
+    .section-2-1st-div span{
+        position: absolute;
+        width: 5px;
+        height: 60px;
+        left: 110px;
+        top: 1750px;
+        background-color: #FF900E;
+    }
+    .section-2-1st-div h1{
+        padding-left: 20px;
+        text-align: center;
+    }
+    .section-2-1st-div div{
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        height: 150px;
+        width: 380px;
+    }
+    .section-2-1st-div div:hover{
+        box-shadow: 5px 5px 5px;
+        background-color: bisque;
+    }
+    .section-2-1st-div div h3{
+        padding-left: 30px;
+        padding-top: 15px;
+    }
+    .section-2-1st-div div p{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .architects-img img{
+        padding-left: 50px;
+        padding-right: 10px;
+        height: 700px;
+        width: 420px;
+        padding-top: 750px;
+        padding-left: -300px;
+        margin-left: 0;
+        position: absolute;
+        left: -30px;
+    }
+    .architects-img button{
+        position: absolute;
+        left: 10px;
+        top: 3100px;
+        padding: 25px 30px;
+        border-radius: 5px;
+        border: 0;
+        background-color: #FF900E;
+        color: white;
+        font-weight: 500;
+        z-index: 1;
+    }
+    .architects-img button:hover{
+        color: #FF900E;
+        background-color: white;
+        box-shadow: 3px 3px 5px;
+    }
+    .architects-img button span{
+        font-weight: 1000;
+        font-size: 30px;
+    }
 }
 
 /* Body section-3 */
@@ -167,6 +382,10 @@ background-color: #FF900E;
     border-radius: 5px;
     padding-bottom: 20px;
 }
+.main-div div:hover{
+    background-color: antiquewhite;
+    box-shadow: 3px 3px 10px;
+}
 .main-div p{
     align-items: center;
     text-align: center;
@@ -179,6 +398,50 @@ background-color: #FF900E;
 .main-div img{
     padding-left: 45px;
     padding-top: 20px;
+}
+
+/* Body section-3 Responsive */
+
+@media screen and (max-width: 700px){
+    .body-section-3{
+        margin-left: 10px;
+        margin-top: 100px;
+    }
+    .body-section-3 h1{
+        text-align: center;
+    }
+    .body-section-3 p{
+        text-align: center;
+    }
+    .main-div{
+        padding-top: 100px;
+        margin-right: 10px;
+        padding-bottom: 150px;
+    }
+    .main-div div{
+        border:1px solid #FF900E;
+        width: 140px;
+        height: 140px;
+        border-radius: 5px;
+        padding-bottom: 20px;
+    }
+    .main-div div:hover{
+        background-color: antiquewhite;
+        box-shadow: 3px 3px 10px;
+    }
+    .main-div p{
+        align-items: center;
+        text-align: center;
+        
+    }
+    .main-div p span{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .main-div img{
+        padding-left: 25px;
+        padding-top: 20px;
+    }
 }
 
 /* Extra section */
@@ -214,6 +477,54 @@ background-color: #FF900E;
     border: 0;
     border-radius: 5px;
 }
+.extra-section-button button:hover{
+    color: #FF900E;
+    background-color: white;
+    box-shadow: 3px 3px 5px;
+}
+
+/* Extra section Responsive */
+
+@media screen and (max-width: 700px){
+    .extra-section-container{
+        background-image: url(./images/background-with-night-city-neon-lights_1441-2822.jpg);
+        border-radius: 5px;
+        display: flex;
+        margin-bottom: 100px;
+        background-size: cover;
+    }
+    .extra-section-div{
+        margin-left: 10px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .extra-section-div h1{
+        color: white;
+        font-size: 50px;
+    }
+    .extra-section-div p{
+        color: white;
+        font-weight: 500;
+    }
+    .extra-section-button{
+        position: absolute;
+        padding-left: 10px;
+        padding-top: 360px;
+    }
+    .extra-section-button button{
+        background-color: #FF900E;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        border-radius: 5px;
+    }
+    .extra-section-button button:hover{
+        color: #FF900E;
+        background-color: white;
+        box-shadow: 3px 3px 5px;
+    }
+    
+}
 
 /* Last section */
 
@@ -236,6 +547,20 @@ background-color: #FF900E;
     height: 30px;
     width: 120px;
 }
+.sopnsors-img img:hover{
+    background-color: rgb(222, 225, 227);
+    border-radius: 5px;
+}
+
+/* Last section Responsive */
+
+@media screen and (max-width: 700px){
+    .sponsors-section{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+}
 
 /* Footer part */
 
@@ -250,4 +575,20 @@ background-color: #FF900E;
 .footer p{
     text-align: center;
     padding-top: 25px;
+}
+
+/* Footer part Responsive */
+
+@media screen and (max-width: 700px){
+    .footer{
+        height: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+    .footer p{
+        text-align: center;
+        padding-top: 15px;
+    }
 }
