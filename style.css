@@ -303,7 +303,7 @@
         width: 5px;
         height: 60px;
         left: 110px;
-        top: 3120px;
+        top: 3150px;
         background-color: #FF900E;
     }
     .section-2-1st-div h1{
@@ -514,7 +514,7 @@
     .extra-section-button{
         position: absolute;
         padding-left: 10px;
-        padding-top: 340px;
+        padding-top: 360px;
     }
     .extra-section-button button{
         background-color: #FF900E;
